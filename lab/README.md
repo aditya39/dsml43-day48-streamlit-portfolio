@@ -29,11 +29,17 @@ Versi lengkap dengan gambar dan lembar kerja ada di **Buku Panduan Peserta Day 4
 
 ```
 Documents/dsml-day48/
-├── materi/          ← repo hands-on dari mentor (berisi lab/portfolio_tabs)
+├── materi/          ← repo hands-on (berisi lab/portfolio_tabs)
 └── my-portfolio/    ← folder kerja kalian → nanti jadi repo GitHub sendiri
 ```
 
-4. Buat venv dan install library dari folder `my-portfolio`:
+4. Clone repo hands-on ke folder `materi` (dari dalam `dsml-day48`):
+
+```bash
+git clone https://github.com/aditya39/dsml43-day48-streamlit-portfolio.git materi
+```
+
+5. Buat venv dan install library dari folder `my-portfolio`:
 
 **macOS / Linux**
 
@@ -53,9 +59,9 @@ portfolio-env\Scripts\activate
 pip install -r ..\materi\lab\portfolio_tabs\requirements.txt
 ```
 
-> Library-nya sama dengan slide "Instalasi dan aplikasi pertama"
-> (`pip install streamlit pandas plotly scikit-learn statsmodels`), tapi versinya dikunci supaya
-> sama dengan yang nanti dipakai saat deploy.
+> Perintah ini sama dengan slide "Instalasi dan aplikasi pertama". `requirements.txt` memasang
+> streamlit, pandas, plotly, scikit-learn, dan statsmodels dengan versi dikunci, supaya sama dengan
+> yang nanti dipakai saat deploy.
 >
 > PowerShell menolak `activate` ("running scripts is disabled")? Jalankan sekali:
 > `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`, lalu coba lagi.
