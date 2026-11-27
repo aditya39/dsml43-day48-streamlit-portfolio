@@ -1,0 +1,5 @@
+venv/
+.venv/
+portfolio-env/
+__pycache__/
+.streamlit/secrets.toml
